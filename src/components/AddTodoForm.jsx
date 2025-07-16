@@ -18,7 +18,7 @@ function AddTodoForm(props) {
 
             // check if the input field is empty or not
             if (todosname.value === "") {
-              alert("Please fill in the name");
+              alert("Please fill in the  task name");
             } else {
               setTodos([
                 ...todos,
