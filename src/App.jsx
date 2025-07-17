@@ -30,6 +30,7 @@ function App() {
           <TodoList
             // method 1 (easy)
             todos={todos}
+            setTodos={setTodos}
           />
         </div>
         <AddTodoForm todos={todos} setTodos={setTodos} />
