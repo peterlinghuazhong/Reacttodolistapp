@@ -19,7 +19,7 @@ function TodoItem(props) {
       setTodos(updatelabel);
     }
   };
-  const updateHandler = () => {
+  const updateCompeleted = () => {
     const updatedlist = [...todos];
     const selected = updatedlist.find((item) => item.id === id);
     selected.isCompleted = !selected.isCompleted;
@@ -30,11 +30,11 @@ function TodoItem(props) {
     <li className="list-group-item d-flex justify-content-between align-items-center">
       <div>
         {isCompleted ? (
-          <button className="btn btn-sm btn-success" onClick={updateHandler}>
+          <button className="btn btn-sm btn-success" onClick={updateCompeleted}>
             <i className="bi bi-check-square"></i>
           </button>
         ) : (
-          <button className="btn btn-sm" onClick={updateHandler}>
+          <button className="btn btn-sm" onClick={updateCompeleted}>
             <i className="bi bi-square"></i>
           </button>
         )}
